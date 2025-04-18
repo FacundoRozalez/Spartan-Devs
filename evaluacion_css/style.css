@@ -1,0 +1,281 @@
+*{
+    box-sizing:border-box;
+
+}
+
+body{
+    display:block;
+    background-color:rgb(6, 205, 219);
+}
+
+.consola{
+    width:400px;
+    height:570px;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px 10px 50px 10px ;
+    background-color: aliceblue;
+}
+
+.consolaSuperior{    
+    position: relative;
+    height: 40px;
+    border-bottom:4px solid rgb(228, 228, 228);
+}
+
+.boxLeft{
+    position:absolute;
+    width: 50px;
+    height: 40px;
+    border-right:4px solid rgb(228, 228, 228);
+}
+
+.boxRight{
+    position: absolute;
+    left:350px;
+    width: 50px;
+    height: 40px;
+    border-left:4px solid rgb(228, 228, 228);
+}
+
+.pantallaExterna{
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:280px;
+    height:215px;
+    background-color: gray;
+    border-radius:5px 5px 30px 5px ;
+}
+
+.margenSuperior{
+    position:relative;
+    width: 300px;
+    height: 30px;
+}
+
+.margenIzquierdo{
+    position: absolute;
+    top:12px;
+    left: 10px;
+    width: 68px;
+    height:6px;
+    border-bottom: 2px blue solid;
+    border-top: 2px purple solid;
+}
+.titulo{
+    position:absolute;
+    top: 0px;
+    left: 80px;
+    width: 200px;
+    height:6px;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color:lightgrey;
+    word-spacing: -3px;
+}
+
+.margenDerecho{
+    position: absolute;
+    top:12px;
+    left: 237px;
+    width: 35px;
+    height:6px;
+    border-bottom: 2px blue solid;
+    border-top: 2px purple solid;
+}
+
+.pantallaInterna{
+    margin-right: auto;
+    margin-left: auto;
+    width: 160px;
+    height: 160px;
+    background-color: rgb(187, 181, 102);
+}
+
+.bateria{
+    position: absolute;
+    top:60px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.circuloRojo{
+    position: absolute;
+    top:80px;
+    left:25px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(228, 92, 92);
+    border-radius:50px;
+}
+
+.batery{
+    position: absolute;
+    top:90px;
+    left:10px;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color:lightgrey;
+    word-spacing: -3px;   
+}
+.boxBotones{
+    position:relative;
+}
+.boxFlechas{
+    position:absolute;
+    top:50px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+
+}
+.flechaArriba{
+    position: absolute;
+    top:0px;
+    left: 42px;
+    width: 10px;
+    height: 10px; 
+    border-left: 7px solid transparent;
+    border-right:7px solid transparent ;
+    border-bottom: 7px solid lightgrey;
+}
+.flechaAbajo{
+    position: absolute;
+    top:90px;
+    left: 42px;
+    width: 10px;
+    height: 10px; 
+    border-left: 7px solid transparent;
+    border-right:7px solid transparent ;
+    border-top: 7px solid lightgrey;
+}
+.flechaDerecha{
+    position: absolute;
+    top:43px;
+    left: 90px;
+    width: 10px;
+    height: 10px; 
+    border-left: 7px solid  lightgrey;
+    border-bottom:7px solid transparent ;
+    border-top: 7px solid transparent;
+}
+.flechaIzquierda{
+    position: absolute;
+    top:43px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border-right: 7px solid  lightgrey;
+    border-bottom:7px solid transparent ;
+    border-top: 7px solid transparent;
+}
+.botonHorizontal{
+    position: absolute;
+    top:37px;
+    left: 10px;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgb(90, 86, 86);
+}
+.botonVertical{
+    position: absolute;
+    top:10px;
+    left: 37px;
+    width: 25px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgb(90, 86, 86);
+}
+.circuloGris{
+    position: absolute;
+    top:37px;
+    left:37px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(53, 47, 47);
+    border-radius:50px   
+}
+.boxBotonesVioletas{
+    position: absolute;
+    top:70px;
+    right: 60px;
+    width: 110px;
+    height: 50px;
+    background-color:lightgrey;
+    border-radius: 40px 40px 40px 40px ;
+    transform: rotate(150deg);
+}
+
+.botonIzquierdoVioleta,
+.botonDerechoVioleta{
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    border-radius: 50px;
+}
+.botonIzquierdoVioleta{
+    top:5px;
+    left: 5px;
+    }
+
+.botonIzquierdoGris,
+.botonDerechoGris{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 50px;
+    height: 15px;
+    background-color: gray;
+    border: 2px solid lightgrey;
+    border-radius: 10px 10px 10px 10px;
+    transform: rotate(150deg);
+}
+.botonDerechoGris{
+    left: 190px;
+}
+
+.boxParlantes{
+    position: relative;
+    top: 180px;
+    left: 180px;
+    width: 200px;
+    height: 100px;
+    transform: rotate(150deg);
+}
+
+.parlante1,
+.parlante2,
+.parlante3,
+.parlante4,
+.parlante5,
+.parlante6{
+    position: absolute;
+    width: 8px;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(223, 223, 223);
+ 
+}
+.parlante2{
+    left: 20px;
+}
+.parlante3{
+    left: 40px;
+}
+.parlante4{
+    left: 60px;
+}
+.parlante5{
+    left: 80px;
+}
+.parlante6{
+    left: 100px;
+}

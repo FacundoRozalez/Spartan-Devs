@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM HTML 3</title>
+</head>
+<body>
+
+    <h1>My feedback form</h1>
+
+    <ul>
+        <ul>
+            <li type="disc">
+                <label for="name">Name:</label>
+                <input id="name" type="text" required>
+            </li>
+            <li type="disc">
+                <label for="email">Email:</label>
+                <input id="email" type="email" required>
+            </li>
+            <li type="disc">
+                <label for="password">Password:</label>
+                <input id="password" type="password" required>
+            </li>
+            <br>
+            <li type="disc">
+                Please check all the emotions that apply to you:
+            </li>
+                <ul>
+                    <li type="disc">
+                       <label for="angry">Angry</label>
+                       <input id="angry" type="checkbox" checked> 
+                    </li>
+                    <li type="disc">
+                        <label for="sad">Sad</label>
+                        <input id="sad" type="checkbox">
+                    </li>
+                    <li type="disc">
+                        <label for="happy">Happy</label>
+                        <input id="happy" type="checkbox">
+                    </li>
+                    <li>
+                        <label for="ambivalent">Ambivalent</label>
+                        <input id="ambivalent" type="checkbox">
+                    </li>
+                </ul>
+            <li type="disc">
+                How satisfied were you with our service?
+            </li>
+                <ul>
+                    <li type="disc">
+                        <label for="verySatisfied">Very satisfied</label>
+                        <input id="verySatisfied" type="radio" name="verySatisfied" value="verySatisfied" checked>
+                    </li>
+                    <li type="disc">
+                        <label for="satisfied">Satisfied</label>
+                        <input id="satisfied" type="radio" name="satisfied" value="satisfied">
+                    </li>
+                    <li type="disc">
+                        <label for="didn't care">Didn't care</label>
+                        <input id="didn't care" type="radio" name="didn't care" value="didn't care">
+                    </li>
+                    <li type="disc">
+                        <label for="dissatisfied">Dissatisfied</label>
+                        <input id="dissatisfied" type="radio" name="dissatisfied" value="dissatisfied">
+                    </li>
+                    <li type="disc">
+                        <label for="veryDissatisfied">Very Dissatisfied</label>
+                        <input id="veryDissatisfied" type="radio" name="veryDissatisfied" value="veryDissatisfied">
+                    </li>
+                </ul>
+            <li type="disc">
+                <label for="futherComments">Futher comments</label>
+                <textarea name="futherComments" id="futherComments" cols="25" rows="3"></textarea>
+            </li>
+            <br>
+            <li type="disc">
+                <label for="bioPhoto">Bio photo</label>
+                <input id="bioPhoto" type="search"><button>Chosee</button>
+            </li>
+            <li type="disc">
+                <label for="locationVisited">Location visited</label>
+                <select name="locationVisited">
+                    <option value="selectLocation">--Select Location--</option>
+                    <option value="Mendoza">Mendoza</option>
+                </select>
+            </li>
+            <br>
+        </ul>
+        <li type="disc">
+            <button>submit</button>
+        </li>
+    </ul>
+
+</body>
+</html>
+

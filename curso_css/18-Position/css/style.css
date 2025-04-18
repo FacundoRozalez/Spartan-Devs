@@ -1,0 +1,169 @@
+/* 
+    La propiedad position nos permite posicionar los elementos. Hay algunos conceptos que debeis conocer para entender position.
+
+    Flujo de renderizado -> Por norma general los elementos se dibujan de izquierda a derecha y de arriba a abajo. El punot 0,0 de los elementos, por norma general, es la esquina superior izquierdo.
+
+    Espacio reservado -> Es el espacio que tiene un elemento asignado en el navegador.
+
+    Elemento posicionado -> Esto significa que el elemento tiene la prioridad position con un valor distinto de "statick", que es el valor que tiene esta propiedad por defecto.
+
+    Stackin context -> Contexto de apilamiento. Es el orden en el que se apilaran las cajas que se superponen, dentro del mismo contenedor
+
+    Al posicionarose un elemento se habilitan 5 propiedades que podemos utilizar para mover los elemntos en los 3 ejes.
+
+        top -> El elemento se movera desde la parte superior la distancia que le hayamos indicado
+
+        right -> El elemento se movera desde la parte derecha la distancia que le hayamos indicado
+
+        bottom -> El elemento se movera desde la parte inferior la distancia que le hayamos indicado
+
+        left -> El elemento se movera desde la parte izquierda la distancia que le hayamos indicado
+
+        z-index -> Nos permite mover el elemento en el contexto de apilamiento(eje z)
+
+        NOTA: SI a un elemento le declaramos la propiedad top y/o left, las propiedades bottom y/o right no funcionaran
+
+        Los posibles valor que le podemos dar a position son:
+        Static -> ES el valor que tiene por deecto un elemento, con este valor el elemento NO ESTA POSICIONADO y por lo cual no podremos moverlo.
+
+        Relavite -> El elemnto mantendra su posicion y medida en el flujo de renderizado y mantendra su espacio reservado. Si lo movemos lo hara usando su posicion en el html como punto de referencia.
+
+        Absoluto -> El elemento perdera sus medidas y su espacio reservado. Si lo movemos usara el elemento padre posicionado como referencia. Si no tiene ninguno, usara el elemento html de referencia
+
+        Fixed -> El elemento perdera sus medidas y su  espacio reservado.
+        Si lo movemos usara el elemento html de referencia, y ademas se quedara fijo en esa posicion aunque hagamos scroll
+        
+        Sticky -> Es una mezcla de position relative y "fixed".
+        Con este tipo de posicionamiento los valores top, left, bottom y right no sirven para mover el elemento, si no para indicarle en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara como si tuviera relative
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: #333;
+    color: #fff;
+    /* padding-top: 70px; */
+}
+
+.container{
+    width: 200px;
+    height:200px;
+    background-color:#555;
+    position:relative;
+}
+
+.box{
+    width: 100px;
+    height:100px;
+    text-align: center;
+    color:#333;   
+}
+
+.box-1{
+    background-color:lightcoral;
+    position:relative;
+    left:150px;
+    z-index: -1;
+}
+
+.box-1-2{
+    background-color: aquamarine;
+    position: relative;
+    left:150px;
+    top:-25;
+    z-index: -2;
+}
+
+.box-2{
+    background-color:lightgreen;
+    position: relative;
+    z-index: 20;
+}
+
+.box-3{
+    background-color:rgb(144, 192, 238);
+    position: relative;
+    z-index: 10;
+}
+/* postion sticky */
+/* position Fixed */
+/* 
+.header{
+    text-align: center;
+    /* padding:25px 0; */
+    /* color: orangered; */
+    /* background-color: lightblue; */
+    /* position:fixed; */
+    /* top:0; */
+    /* width: 100%; */
+    /* height: 200px; */
+    /* position: sticky;
+    top:0; */
+/* }  */
+
+/* .main{
+    position: sticky;
+    top:0;
+} */
+/* 
+.article-title{
+    position: sticky;
+    top:0;
+    background-color: #333;
+    margin: 0;
+} */
+/* position relative
+.box{
+    /* width: 100px;
+    height:100px; */
+/* }
+
+.box-1{
+    background-color: lightcoral;
+    position:relative;
+    border-radius: 50px;
+    top: 100px;
+    left:100px;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+} */ 
+
+/* position absolute 
+ .box{
+    width: 100px;
+    height:100px; 
+    text-align:center}
+
+.container{
+    width:200px;
+    height: 200px;
+    background-color: lightskyblue; 
+    position:absolute;
+}
+
+.box-1{
+    background-color: lightcoral;
+    position:absolute;
+    right:0;
+    bottom:0;   
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+
+.link{
+    position: absolute;
+    background-color: lime;
+    width:200px;
+    top:50px;
+} */

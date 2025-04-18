@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM HTML</title>
+    <style>
+        body{
+        margin: 5vw;
+    }
+    fieldset{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding: 50px;
+        border-radius: 10px;
+    }
+    select,textarea{
+        width: 80vw;
+    }
+    button{
+        background-color: black;
+        width: 80vw;
+        color: white;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            
+            <div>
+                <label for="name"><b>Escribe tu nombre:</b></label>
+                <input id="name" type="text" placeholder="Francesc" required>
+            </div>
+            <br>
+            <div>
+                <label for="surname"><b>Escribe tu apellido:</b></label>
+                <input id="surname" type="text" placeholder="Ricart" required>
+            </div>
+            <br>
+            <div>
+                <label for="email"><b>Escribe tu email:</b></label>
+                <input id="email" type="email" placeholder="correo@empresa.com" required>
+            </div>
+            <div>
+                <h2>¿Qué valoracion le das a la publicación?</h2>
+                <input id="cero" type="radio" name="valoracion" value="0">
+                <label for="cero">0</label>
+                <input id="uno" type="radio" name="valoracion" value="1">
+                <label for="uno">1</label>
+                <input id="dos" type="radio" name="valoracion" value="2">
+                <label for="dos">2</label>
+                <input id="tres" type="radio" name="valoracion" value="3">
+                <label for="tres">3</label>
+                <input id="cuatro" type="radio" name="valoracion" value="4">
+                <label for="cuatro">4</label>
+                <input id="cinco" type="radio" name="valoracion" value="5" checked>
+                <label for="cinco">5</label>
+            </div>
+            <div>
+                <h2>¿Qué asignatura has estudiado?</h2>
+                <input type="checkbox" name="asignatura" value="html">
+                <label><b>html</b></label>
+                <input type="checkbox" name="asignatura" value="css">
+                <label><b>css</b></label>
+                <input type="checkbox" name="asignatura" value="javascript">
+                <label><b>Javascript</b></label>
+            </div>
+            <div>
+                <h2>Selecciona tu alineación ideal</h2>
+                <select name="alineacion" multiple size="5">
+                    <option value="cristiano">Cristiano</option>
+                    <option value="messi">Messi</option>
+                    <option value="chigrinsky">Chigrinsky</option>
+                    <option value="sergioRamos">Sergio Ramos</option>
+                    <option value="shevchenko">Shevchenko</option>
+                </select>
+            </div>    
+            <div>
+                <h2>¿Qué mejorarías de este curso?</h2>
+                <textarea name="cuadrotexto" id="mesagge" rows="10"></textarea>
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        
+        </fieldset>
+    </form>
+</body>
+</html>

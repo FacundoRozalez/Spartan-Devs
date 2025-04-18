@@ -1,0 +1,111 @@
+/* SELECTORES */
+
+/*
+
+    Selectores Simples
+        Selectores elementales
+        Selector UNiversal
+        Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de atributo
+            id -> id del elemento
+            clase -> clase del emento
+            otros atributos
+                [atributo]
+                [atributo=valor]
+                [atributo^=valor]
+                [atributo*=valor]
+                [atributo$=valor][atributo|=valor]
+
+    Selectores Compuestos
+        Selectores Agrupados -> Se agrupan los selectores separados por comas y se escribe el estilo una sola vez
+        Selectores Combinadores
+            Selectores descendiente
+            Selector de hermano siguiente +
+            Selector de hermanos siguientes ~
+            Selector de hijo directo > -> Selecciona SOLO los hijos directos
+        Pseudoclases - Pseudoelementos
+*/
+.container > p{
+    background-color: tomato;
+}
+
+/* 
+.text-2 + .title2{
+    background-color: tomato;
+}
+
+.text-2 ~ p{
+    background-color: teal;
+}
+*/
+/* 
+div .title-2{
+    background-color: teal;
+}
+*/
+/* 
+.text, .text-2, .text-3, .text-4{
+    background-color: steelblue;
+}
+ */
+
+
+/*  
+*{
+    background-color: lightcoral;
+}
+
+h1{
+    background-color: lightblue;
+}
+
+p{
+    background-color: lightgreen;
+}
+
+ul{
+    background-color: red;
+}
+
+li{
+    background-color: blue;
+}
+    */
+/* 
+#title{
+    background-color: lightgreen;
+}
+
+.title{
+    background-color: lightcoral;
+}
+
+.text{
+    background-color: lightgreen;
+}
+ */
+
+[href]{
+    background-color: mediumorchid;
+}
+
+[href="https://google.com"]{
+    background-color: orangered;
+}
+
+[href^="color"]{
+    background-color: red;
+
+}
+[href*="modo"]{
+    background-color: green;
+
+}
+
+[href$="azul"]{
+    background-color: blue;
+
+}
+[lang|="en"]{
+    background-color: magenta;
+}

@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin:0;
+    background-color: rgb(32, 32, 32);
+    min-height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 0.5% auto 0% auto;
+    background-color: rgb(255, 196, 0);  
+}
+
+h1{
+    color: black;
+    font-size: 6rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a{  
+    flex: 1 1 auto;
+}
+
+#menu{
+    background-size: cover;    
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    color:beige;
+    font-size: 0.9vw;
+    font-size: 1rem;
+}
+#principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 5%;
+    width: 60vw;
+
+}
+
+.contpeli{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.nombrepeli{
+    margin: 5% 0 20% 0;
+}
+
+
+.imagen{
+    height: 270px;
+    width: 160px;
+    object-fit:cover;
+}
+
+.peli {
+    width: 100%;
+    height: 100%;     
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: max-content;
+    margin: 0 auto ;
+    background-color: rgb(255, 196, 0);
+    border: solid rgb(255, 196, 0) 4px;
+} 
+
+#anuncios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+}
+
+#contpromo, #contcontacto, #contclub{
+    width: 370px;
+    height: auto;
+}

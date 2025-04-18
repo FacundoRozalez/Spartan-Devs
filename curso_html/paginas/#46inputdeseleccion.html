@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de Seleccion</title>
+</head>
+
+<!-- 
+
+    radio -> Permite seleccionar una unica opcion de una lista de opciones relacionadas
+
+    checkbox -> Permite seleccionar varias opciones de una lista de opcionaes relacionadas
+
+    select -> Crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    Cada opcion ira dentro de una etiqueta <option> </option>
+
+    Si tenemos muchas opciones podemos ordenarlas por categorias a traves de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+
+-->
+
+<body>
+    <h1>Elementos Selecionados</h1>
+    <form>
+        <!--  -->
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+        </datalist>
+    <!-- 
+        <select name="lenguajes" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+        </select>
+    -->
+<!-- 
+    <select name="mascotas">
+        <optgroup label="4 patas">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+        </optgroup>
+        <optgroup label="otras">
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+        </optgroup>
+    </select>
+ -->
+    <!-- 
+        <h2>Genero</h2>
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" value="Femenino">
+        </label>
+        <label>Desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+    -->
+        <!-- 
+        <h2>Lenguajes que conoces</h2>
+        <label>
+            HTML
+            <input type="checkbox" name="languages" value="html"
+            checked>
+        </label>
+        <label>
+            CSS
+            <input type="checkbox" name="languages" value="css"
+            checked>
+        </label>
+        <label>
+            Javascript
+            <input type="checkbox" name="languages" value="javascript"
+            checked>
+        </label>
+ -->
+
+    </form>
+ 
+
+
+</body>
+</html>

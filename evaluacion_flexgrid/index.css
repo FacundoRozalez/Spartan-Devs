@@ -1,0 +1,458 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+}
+
+body{
+    padding: 10px;
+}
+
+body>*{
+    background-color: #e9aa6e;
+    border: medium solid #222;
+}
+
+h1{
+    text-align: center;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(1,100px);
+    grid-template-areas:
+    "logo titulo login" 
+}
+.logo{
+    grid-area: logo;
+
+}
+#imgLogo{
+    width: 150px;
+    height: 100px;
+    object-fit:cover;
+    margin: 0 auto;
+}
+.titulo{
+    grid-area: titulo;
+    font-size: 22px;
+}
+.login{
+    grid-area: login;
+    background-color: blue;
+    margin: auto;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+    color: white;
+}
+
+main{
+    min-height:100vh;
+    margin:0;
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(8,200px);
+    grid-template-areas: 
+    
+    "pint-1   pint-1   pint-2  pint-2   pint-3   pint-3"
+
+    "pint-4   pint-4   pint-5   pint-5  pint-6   pint-6"
+    
+    "pint-4   pint-4   pint-7   pint-7  pint-7   pint-7"
+    
+    "pint-8   pint-8   pint-9   pint-9  pint-10 pint-10"
+    
+    "pint-11  pint-11  pint-12 pint-12  pint-13  pint-13"
+    
+    "pint-14  pint-14  pint-14  pint-14  pint-15 pint-15"
+
+    "pint-16  pint-16  pint-16  pint-16  pint-15 pint-15"
+
+    "pint-17 pint-17   pint-18  pint-18  pint-19 pint-19";
+    padding: 20px;
+    gap: 50px;
+}
+
+img {
+        width: 100%;
+        height: 100%;
+        object-fit:scale-down;
+        display: block;
+}
+
+.pintura{
+    border-radius: 2px;
+    box-shadow: 5px 5px rgb(71, 68, 68), 10px 10px rgb(0, 0, 0);
+}
+.logo{
+}
+
+.titulo{
+}
+
+.login{
+}
+
+#pint-1{
+    grid-area: pint-1;
+    background-color: blue;
+}
+#pint-1-1{
+    object-fit: cover;
+}
+
+#pint-2{
+    grid-area: pint-2;
+    background-color: rgb(255, 173, 173);
+
+}
+#pint-2-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+#pint-3{
+    grid-area: pint-3;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#pint-3-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#pint-4{
+    grid-area: pint-4;
+    background-color:brown;
+
+}
+#pint-4-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+#pint-5{
+    grid-area: pint-5;
+    background-color:cadetblue;
+
+}
+#pint-5-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+ 
+}
+#pint-6{
+    grid-area: pint-6;
+    background-color:chartreuse;
+
+}
+#pint-6-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-7{
+    grid-area: pint-7;
+    background-color:cornsilk;
+
+}
+#pint-7-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-8{
+    grid-area: pint-8;
+    background-color:cyan;
+
+}
+#pint-8-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-9{
+    grid-area: pint-9;
+    background-color:darkgoldenrod;
+
+}
+#pint-9-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-10{
+    grid-area: pint-10;
+    background-color:darkgray;
+
+}
+#pint-10-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-11{
+    grid-area: pint-11;
+    background-color:darkkhaki;
+
+}
+#pint-11-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-12{
+    grid-area: pint-12;
+    background-color:darkorange;
+
+}
+#pint-12-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-13{
+    grid-area: pint-13;
+    background-color:rgb(91, 194, 241);
+
+}
+#pint-13-1{
+    width: 50%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-14{
+    grid-area: pint-14;
+    background-color:greenyellow;
+
+}
+#pint-14-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-15{
+    grid-area: pint-15;
+    background-color:khaki;
+
+}
+#pint-15-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-16{
+    grid-area: pint-16;
+    background-color:lemonchiffon;
+
+}
+#pint-16-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-17{
+    grid-area: pint-17;
+    background-color:lightblue;
+    
+}
+#pint-17-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+#pint-18{
+    grid-area: pint-18;
+    background-color:lightcoral;
+
+}
+
+#pint-18-1{    
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+#pint-19{
+    grid-area: pint-19;
+    background-color:plum;
+
+}
+#pint-19-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-areas:
+    "copy contacto" ;
+}
+.copy{
+    grid-area: copy;
+    text-align: center;
+}
+
+.contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.imgicon{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;    
+}
+
+@media (max-width: 600px) {
+    header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "logo"
+        "titulo"
+        "login";
+      text-align: center;
+    }
+  
+    .login {
+      margin: auto;
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(19, 200px);
+      grid-template-areas:
+        "pint-1"
+        "pint-2"
+        "pint-3"
+        "pint-4"
+        "pint-5"
+        "pint-6"
+        "pint-7"
+        "pint-8"
+        "pint-9"
+        "pint-10"
+        "pint-11"
+        "pint-12"
+        "pint-13"
+        "pint-14"
+        "pint-15"
+        "pint-16"
+        "pint-17"
+        "pint-18"
+        "pint-19";
+      gap: 30px;
+    }
+  
+    footer {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "copy"
+        "contacto";
+      text-align: center;
+    }
+  
+    .contacto {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+          "logo titulo titulo"
+          "login login login";
+        text-align: center;
+      }
+    
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10, 200px);
+  
+      grid-template-areas:
+        "pint-1 pint-2"
+        "pint-3 pint-4"
+        "pint-5 pint-6"
+        "pint-7 pint-8"
+        "pint-9 pint-10"
+        "pint-11 pint-12"
+        "pint-13 pint-14"
+        "pint-15 pint-16"
+        "pint-17 pint-18"
+        "pint-19 .";
+      gap: 30px;
+    }
+  
+    footer {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    main {
+      gap: 50px;
+    }
+  }
+  
